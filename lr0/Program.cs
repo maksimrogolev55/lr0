@@ -15,6 +15,7 @@ namespace lr0
             // Задаём переменные
             double a1 = 1;
             double a2 = 1;
+            // Дополнительный комментарий
             // Через консоль задаём максимальчное число итераций
             Console.Write("Максимальное число итераций: ");
             int m = Convert.ToInt32(Console.ReadLine());
