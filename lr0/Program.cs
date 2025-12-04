@@ -37,7 +37,7 @@ namespace lr0
                     num = num - 1;
                     Console.WriteLine("Выполнено " + num + " итерации, условие не выполнено.");
                     // В случае, когда максимальное число превышено, k принимает false
-                    condition = false;
+                    marker = false;
                     break;
                 }
                 else
@@ -50,7 +50,7 @@ namespace lr0
                 }
             }
             // В случае, если максимальное число не превышено, k остаётся true, вследствие чего выводится соответствующее сообщение
-            if (condition == true)
+            if (marker == true)
             {
                 Console.WriteLine("Выполнено " + num + " итерации, условие выполнено.");
             }
