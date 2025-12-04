@@ -25,8 +25,8 @@ namespace lr0
             Console.WriteLine(a3);
             // Объявим номер итерации
             int num = 1;
-            // Вводим логическую переменную k
-            bool k = true;
+            // Вводим логическую переменную condition
+            bool condition = true;
             // Цикл продолжается до тех пор, пока a3 больше 0.9
             while (a3 >= 0.9)
             {
@@ -37,7 +37,7 @@ namespace lr0
                     num = num - 1;
                     Console.WriteLine("Выполнено " + num + " итерации, условие не выполнено.");
                     // В случае, когда максимальное число превышено, k принимает false
-                    k = false;
+                    condition = false;
                     break;
                 }
                 else
@@ -50,7 +50,7 @@ namespace lr0
                 }
             }
             // В случае, если максимальное число не превышено, k остаётся true, вследствие чего выводится соответствующее сообщение
-            if (k == true)
+            if (condition == true)
             {
                 Console.WriteLine("Выполнено " + num + " итерации, условие выполнено.");
             }
